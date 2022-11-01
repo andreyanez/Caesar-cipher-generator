@@ -17,13 +17,14 @@
           <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
             <figure>
               <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                <img
+                <nuxt-img
+                  provider="imgix"
+                  src="/veHGlVkU4qQ"
+                  alt="image of my site"
+                  w="1184"
+                  h="1376"
                   class="rounded-lg shadow-lg object-cover object-center"
-                  src="https://source.unsplash.com/veHGlVkU4qQ"
-                  alt="caesar"
-                  width="1184"
-                  height="1376"
-                />
+                ></nuxt-img>
               </div>
             </figure>
           </div>

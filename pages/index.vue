@@ -8,8 +8,9 @@ export default {
       resultado: "",
     };
   },
+  mounted() {},
   methods: {
-    codificar: function (event) {
+    codificar: function () {
       const fullAlphabet = this.alphabet + this.alphabet + this.alphabet;
       let cipherText = this.textValue;
       let cipherOffset = this.offsetValue || 0;
@@ -31,7 +32,6 @@ export default {
           cipherResult += nextLetter;
         }
       }
-
       !this.textValue.length
         ? (this.resultado = "Ingresa un texto")
         : (this.resultado = cipherResult);
@@ -60,13 +60,8 @@ export default {
               <p
                 class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
               >
-                App realizado para el examen técnico de
-                <a
-                  href="http://www.tismart.com/"
-                  class="text-red-400"
-                  target="_blank"
-                  >TiSmart</a
-                >
+                Ingresa el texto a codificar, y el número de posiciones de
+                desplazo. El resultado cambiará automaticamente.
               </p>
               <p
                 class="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10"
@@ -138,7 +133,7 @@ export default {
                     </fieldset>
                     <!-- <transition name="fade"> -->
                     <div
-                      class="resultado w-52 mx-auto text-center opacity-0 h-0"
+                      class="resultado mx-auto text-center opacity-0 h-0"
                       :class="[
                         !!offsetValue && !!textValue ? 'opacity-100 h-20' : '',
                       ]"
@@ -155,14 +150,6 @@ export default {
                   </form>
                 </div>
               </div>
-              <div
-                class="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10 text-left"
-              >
-                <p class="text-xs leading-5 text-gray-500">
-                  Ingresa el texto a codificar, y el número de posiciones de
-                  desplazo. El resultado cambiará automaticamente.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -174,5 +161,6 @@ export default {
 <style>
 .resultado {
   transition: height 400ms ease;
+  min-width: 13rem;
 }
 </style>

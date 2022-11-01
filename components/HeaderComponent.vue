@@ -62,14 +62,6 @@ export default {
           >
         </div>
       </div>
-      <div class="hidden md:flex">
-        <a
-          href="https://github.com/andreyanez/tismart-lucasart"
-          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
-        >
-          Ir a librería Lucas Art
-        </a>
-      </div>
     </nav>
 
     <!--
@@ -122,12 +114,6 @@ export default {
             >Cifrado Cesar</nuxt-link
           >
         </div>
-        <a
-          href="https://github.com/andreyanez/tismart-lucasart"
-          class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-        >
-          Libreria Lucas Art
-        </a>
       </div>
     </div>
   </header>
