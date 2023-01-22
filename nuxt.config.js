@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
@@ -9,7 +9,7 @@ export default {
   head: {
     title: "tismart-cesar-test",
     htmlAttrs: {
-      lang: "en",
+      lang: "es",
     },
     meta: [
       { charset: "utf-8" },
